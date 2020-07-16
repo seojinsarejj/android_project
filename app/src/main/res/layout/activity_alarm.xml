@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/titleET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="200dp"
+        android:layout_marginBottom="150dp"
+        android:text="title"
+        android:textSize="40dp"
+        android:fontFamily="@font/scdream4"
+        android:background="@null"/>
+
+    <TimePicker
+        android:id="@+id/timePicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:timePickerMode="spinner"/>
+
+    <Button
+        android:id="@+id/onBtn"
+        android:layout_width="150dp"
+        android:layout_height="33dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="150dp"
+        android:background="@drawable/btn_style"
+        android:onClick="regist"
+        android:text="알람 설정"
+        android:textSize="12dp"
+        android:textColor="#ffffff"
+        android:fontFamily="@font/scdream2"/>
+
+    <Button
+        android:id="@+id/offBtn"
+        android:layout_width="150dp"
+        android:layout_height="33dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/btn_style"
+        android:onClick="unregist"
+        android:text="알람 끄기"
+        android:textSize="12dp"
+        android:textColor="#ffffff"
+        android:fontFamily="@font/scdream2"/>
+
+    <LinearLayout
+        android:layout_width="100dp"
+        android:layout_height="25dp"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginTop="250dp">
+
+        <Button
+            android:id="@+id/alarmBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Alarm"
+            android:textSize="7dp"
+            android:textColor="#ffffff"
+            android:stateListAnimator="@null"
+            android:background="@drawable/under_this_left"/>
+
+        <Button
+            android:id="@+id/mapBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Map"
+            android:textSize="6dp"
+            android:stateListAnimator="@null"
+            android:background="@drawable/under_other_right"
+            android:onClick="mapO"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

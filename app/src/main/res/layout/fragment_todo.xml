@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".todo">
+
+    <TextView
+        android:id="@+id/todotitle"
+        android:layout_width="242dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="263dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="263dp"
+        android:fontFamily="@font/jalnan"
+        android:gravity="center_horizontal"
+        android:text="Todo List"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.567"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="67dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="67dp"
+        android:gravity="right"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/todotitle">
+
+        <Button
+            android:id="@+id/plus"
+            android:layout_width="20dp"
+            android:layout_height="40dp"
+            android:background="#00FFFFFF"
+            android:fontFamily="@font/scdream2"
+            android:text="+"
+            android:textSize="36sp" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+    </ListView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
